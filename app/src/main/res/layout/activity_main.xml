@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_margin="10dp"
+    android:background="#ffffff"
+    android:id="@+id/whole"
+    tools:context="jain.samkit.wifistate.MainActivity">
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/toggle"
+        android:text="@string/on"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/head1"
+        android:layout_below="@id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/heading1"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:padding="3dp" />
+
+    <HorizontalScrollView
+        android:layout_below="@id/head1"
+        android:id="@+id/horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_below="@id/head1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:text="@string/ssid"
+                    android:textSize="15dp"
+                    android:padding="3dp" />
+                <TextView
+                    android:id="@+id/ssidv"
+                    android:text="@string/na"
+                    android:textSize="15dp"
+                    android:padding="3dp"
+                    android:layout_gravity="left" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/bssid"
+                    android:textSize="15dp"
+                    android:padding="3dp" />
+                <TextView
+                    android:id="@+id/bssidv"
+                    android:text="@string/na"
+                    android:textSize="15dp"
+                    android:padding="3dp"
+                    android:layout_gravity="left" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/level"
+                    android:textSize="15dp"
+                    android:padding="3dp" />
+                <TextView
+                    android:id="@+id/levelv"
+                    android:text="@string/na"
+                    android:textSize="15dp"
+                    android:padding="3dp"
+                    android:layout_gravity="left" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/linkspeed"
+                    android:textSize="15dp"
+                    android:padding="3dp" />
+                <TextView
+                    android:id="@+id/linkv"
+                    android:text="@string/na"
+                    android:textSize="15dp"
+                    android:padding="3dp"
+                    android:layout_gravity="left" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/status"
+                    android:textSize="15dp"
+                    android:padding="3dp" />
+                <TextView
+                    android:id="@+id/statusv"
+                    android:text="@string/na"
+                    android:textSize="15dp"
+                    android:padding="3dp"
+                    android:layout_gravity="left" />
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

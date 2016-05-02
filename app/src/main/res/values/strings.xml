@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WiFi State</string>
+    <string name="toggle_text">Change WiFi state</string>
+    <string name="heading1">Current Wifi Information</string>
+    <string name="heading2">Log</string>
+    <string name="ssid">Network Name</string>
+    <string name="bssid">Address of Access Point</string>
+    <string name="level">Signal Level (in dBm)</string>
+    <string name="linkspeed">Link Speed</string>
+    <string name="na">N/A</string>
+    <string name="status">Status</string>
+    <string name="refresh">Refresh</string>
+    <string name="off">Turn Wifi off</string>
+    <string name="on">Turn Wifi on</string>
+</resources>
